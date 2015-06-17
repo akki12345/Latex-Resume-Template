@@ -9,14 +9,16 @@
 \LoadClass{article}
 \usepackage{wasysym}
 \usepackage{marvosym}
-\usepackage{ifsym}}
+\usepackage{ifsym}
 
 % Package Imports
 \usepackage[hmargin=1.25cm, vmargin=0.7cm]{geometry}
 \usepackage[usenames,dvipsnames]{xcolor}
 \usepackage{hyperref}
 \usepackage{titlesec}
+\usepackage{supertabular}         %for Grades
 \usepackage[absolute]{textpos}
+\usepackage[utf8]{inputenc}
 \usepackage[UKenglish]{babel}
 \usepackage[UKenglish]{isodate}
 \usepackage{fontspec,xltxtra,xunicode}
@@ -92,16 +94,16 @@ Last Updated on
 
 % Name command
 \newcommand{\namesection}[3]{
-	\centering{
-		\sffamily
-		\color{date}
-		\fontspec[Path = fonts/lato/]{Lato-Bol}\fontsize{40pt}{10cm}\selectfont #1 
-		\fontspec[Path = fonts/lato/]{Lato-Bol}\selectfont #2
-	} \\
-	\vspace{5pt}
-	\centering{ \color{green}\fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{11pt}{14pt}\selectfont #3}
-	\noindent\makebox[\linewidth]{\rule{\paperwidth}{0.4pt}}
-	\vspace{-15pt}
+  \centering{
+    \sffamily
+    \color{date}
+    \fontspec[Path = fonts/lato/]{Lato-Bol}\fontsize{40pt}{10cm}\selectfont #1 
+    \fontspec[Path = fonts/lato/]{Lato-Bol}\selectfont #2
+  } \\
+  \vspace{5pt}
+  \centering{ \color{green}\fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{11pt}{14pt}\selectfont #3}
+  \noindent\makebox[\linewidth]{\rule{\paperwidth}{0.4pt}}
+  \vspace{-15pt}
 }
 \titlespacing{\section}{0pt}{0pt}{0pt}
 
