@@ -9,7 +9,10 @@
 \LoadClass{article}
 \usepackage{wasysym}
 \usepackage{marvosym}
+\usepackage{unicode-math}
 \usepackage{ifsym}
+\usepackage{fontenc}
+\usepackage{pifont}
 
 % Package Imports
 \usepackage[hmargin=1.25cm, vmargin=0.7cm]{geometry}
