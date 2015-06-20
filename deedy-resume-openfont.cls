@@ -7,6 +7,7 @@
 }
 \ProcessOptions\relax
 \LoadClass{article}
+\usepackage{mdframed}
 \usepackage{wasysym}
 \usepackage{marvosym}
 \usepackage{unicode-math}
